@@ -9,3 +9,6 @@ double res23 = ((num1 / 23) * 10) % 10;
 //Console.WriteLine (res23);
 Console.WriteLine(res7 + res23 == 0 ? "Число кратно." : "Число некратно.");
 
+// альтернативный способ 
+//Console.WriteLine(num1 % 7 == 0 && num % 23 == 0 ? "Да" : "Нет");
+
