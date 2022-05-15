@@ -3,7 +3,6 @@ Console.Write("Введите любое положительное число =
 int num1 = int.Parse(Console.ReadLine());
 Console.Write("Введите ёщё одно число =>" + " ");
 int num2 = int.Parse(Console.ReadLine());
-//Console.WriteLine(num1 / num2 == num1 | num2  ? "да" : "нет");
 int minnum = 0;
 int maxnum = 0;
 if (num1 < num2)
