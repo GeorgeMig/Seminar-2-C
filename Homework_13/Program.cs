@@ -1,19 +1,23 @@
-﻿// ПРОГРАММА, КОТОРАЯ ВЫВОДИТ СЛУЧАЙНОЕ  ЧИСЛО И ОПРЕДЕЛЯЕТ ТРЕТЬЮ ЦИФРУ ЭТОГО ЧИСЛА
+﻿// ПРОГРАММА, КОТОРАЯ ОПРЕДЕЛЯЕТ ТРЕТЬЮ ЦИФРУ ЗАДАННОГО ЧИСЛА (ЛЮБОЕ).
 
-// 
-// Решение при помощи метода (функции). (НЕ УНЕВИРСАЛЬНЫЙ. НУЖНО ДОДУМАТЬ)
+Console.Write("Введите любое положительное число от 0 и выше => ");
+int number = int.Parse(Console.ReadLine());
 
-int number = new Random().Next(10, 1000);
-if (number > 99)
+int n = number;
+
+while (n >= 1000)
+{
+    
+   n = n / 10; 
+}
+
+if (n > 99 && n < 1000)
     {
-        int thirdDigit = number % 10;
+        int thirdDigit = n % 10;
         Console.Write($"{number} => {thirdDigit}");
 
     }
-    else
+    else if (n < 100)
     {
-        int thirdDigit = (number * 10) % 10;
         Console.Write($"{number} => третьей цифры нет");
     }
-
-
